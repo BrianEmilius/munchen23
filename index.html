@@ -30,7 +30,8 @@
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 20, 2023 06:10:00+01:00").getTime();
+//var countDownDate = new Date("Sep 20, 2023 06:10:00Z").getTime();
+var countDownDate = new Date(new Date("Sep 20, 2023 06:10:00Z").toLocaleString('da-DK', {timeZone: 'Denmark/Copenhagen'})).getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
